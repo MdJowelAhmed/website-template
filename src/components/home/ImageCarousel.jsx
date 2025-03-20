@@ -17,7 +17,7 @@ export function ImageCarousel({
   autoPlay = false,
   autoPlayInterval = 5000,
   aspectRatio = "video",
-  height = 600,
+  height = 200,
   showControls = true,
   showIndicators = true,
   textStyle = "dark",
@@ -82,8 +82,8 @@ export function ImageCarousel({
                   src={image.src || "/placeholder.svg"}
                   alt={image.alt}
                   width={1440}
-                  height={height}
-                  className="h-full w-full object-cover"
+                  height={600}
+                  className="h-[700px] w-full object-cover"
                 />
                 {(image.title || image.description) && textStyle !== "none" && (
                   <div
